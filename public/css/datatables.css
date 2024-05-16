@@ -1,0 +1,17 @@
+th {
+    background-color: #00324d !important;
+    color: white !important;
+    text-align: center !important;
+}
+
+table>tbody>tr>td {
+    vertical-align: middle !important;
+    border: solid lightgray 1px;
+    text-align: center !important;
+}
+
+@media screen and (max-width: 600px) {
+    #roles_wrapper {
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,42 @@
+.calendar{
+    width: 100%;
+    max-width: 1050px;
+    margin: 50px;
+}
+
+@media(max-width: 1070px){
+    .calendar{
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.fc-event-time{
+    display: none;
+}
+
+.fc-event-title{
+    text-align: left;
+    display: block;
+}
+
+.boton{
+    background-color: #033f60;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #033f60;
+    color: white;
+}
+
+.title_off_cavas {
+    color: #033f60;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.subtitle_canvas_off {
+    color: #033f60;
+    font-weight: 600;
+}

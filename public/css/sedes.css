@@ -1,0 +1,18 @@
+/* Navbar */
+.button{
+    color: #00324d;
+}
+
+.navbutton:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.table2 {
+    width: 1000px;
+}
+
+.nav-button.active{
+    color: aliceblue;
+    background-color: #00324d;
+}

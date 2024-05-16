@@ -1,0 +1,36 @@
+.table {
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 50px;
+    color: #00324d;
+}
+
+.table2 {
+    width: 800px;
+}
+
+.var {
+    width: 500px;
+    height: 70px;
+}
+
+.forma{
+    height: 500px;
+}
+
+/* Navbar */
+.button{
+    color: #00324d;
+}
+
+.navbutton:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.nav-button.active{
+    color: aliceblue;
+    background-color: #00324d;
+}

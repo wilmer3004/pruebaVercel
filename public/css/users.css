@@ -1,0 +1,45 @@
+.table2 {
+    width: 1250px;
+}
+
+.table {
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 50px;
+    color: #00324d;
+}
+
+.form {
+    width: 800px;
+}
+
+.formplus{
+    display: none;
+}
+
+tr.inactivo{
+    background-color: #E5E8E8;
+}
+
+/* Nav bar */
+.button{
+    color: #00324d;
+}
+
+.button:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.nav-button.active{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+
+
+
+
+

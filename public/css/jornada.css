@@ -1,0 +1,134 @@
+/* Navbar */
+.button{
+    color: #00324d;
+}
+
+.navbutton:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.table2 {
+    width: 1100px;
+}
+
+.activo{
+    color: aliceblue;
+    background-color: red;
+}
+
+.pastel-colours{
+
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    width:  90px;
+    height:  30px;
+    border: none;
+    border-radius: 5px;
+    padding:  0;
+    overflow: hidden;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Override the default appearance */
+    width:  100%; /* Full width to fit the container */
+    height:  5.5px; /* Adjust height as needed */
+    border: none;
+    border-radius:  2.5px; /* Smaller border-radius for a smoother look */
+    padding:  0;
+    overflow: hidden;
+    background: #d9e5ef; /* Background color to match the navbar */
+    outline: none; /* Remove the default outline */
+    transition: background  0.2s; /* Smooth transition for the background color */
+}
+
+/* Chrome styles */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width:  20px; /* Adjust the thumb size as needed */
+    height:  20px;
+    background: rgb(5, 5, 5); /* Thumb color to match the navbutton hover */
+    border-radius:  50%;
+    cursor: pointer;
+    transition: background  0.2s; /* Smooth transition for the thumb color */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #4e5b62; /* Thumb color when hovered */
+}
+
+/* Firefox styles */
+input[type="range"]::-moz-range-thumb {
+    width:  20px;
+    height:  20px;
+    background: rgb(72, 60, 60);
+    border-radius:  50%;
+    cursor: pointer;
+    transition: background  0.2s;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #8f8f8f;
+}
+
+/* Add focus styles */
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #00324d;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #087fbf;
+}
+.colorData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+/* Chrome styles */
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding:  0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+/* Firefox styles */
+input[type="color"]::-moz-color-swatch {
+    border: none;
+}
+input[type="color"]::-moz-focus-inner {
+    border: none;
+    padding:  0;
+}
+
+.color-preview{
+    background-color: rgb(221, 225, 233);
+    width:  90px;
+    height:  25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0;
+    display: flex;
+    justify-content: end;
+
+}
+.color-box {
+    width:  20px;
+    height:  20px;
+    display: inline-block;
+    vertical-align: middle;
+    border:  1px solid #ccc;
+}
+
+
+

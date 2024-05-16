@@ -1,0 +1,321 @@
+:root {
+    --primary-color: #00324d;
+    --main-text-color: #009d63;
+}
+
+/* Navbar */
+.button{
+    color: #00324d;
+}
+
+.navbutton:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.table2 {
+    width: 1100px;
+}
+
+.activo{
+    color: aliceblue;
+    background-color: red;
+}
+
+.pastel-colours{
+
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    width:  90px;
+    height:  30px;
+    border: none;
+    border-radius: 5px;
+    padding:  0;
+    overflow: hidden;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Override the default appearance */
+    width:  100%; /* Full width to fit the container */
+    height:  5.5px; /* Adjust height as needed */
+    border: none;
+    border-radius:  2.5px; /* Smaller border-radius for a smoother look */
+    padding:  0;
+    overflow: hidden;
+    background: #d9e5ef; /* Background color to match the navbar */
+    outline: none; /* Remove the default outline */
+    transition: background  0.2s; /* Smooth transition for the background color */
+}
+
+/* Chrome styles */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width:  20px; /* Adjust the thumb size as needed */
+    height:  20px;
+    background: rgb(5, 5, 5); /* Thumb color to match the navbutton hover */
+    border-radius:  50%;
+    cursor: pointer;
+    transition: background  0.2s; /* Smooth transition for the thumb color */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #4e5b62; /* Thumb color when hovered */
+}
+
+/* Firefox styles */
+input[type="range"]::-moz-range-thumb {
+    width:  20px;
+    height:  20px;
+    background: rgb(72, 60, 60);
+    border-radius:  50%;
+    cursor: pointer;
+    transition: background  0.2s;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #8f8f8f;
+}
+
+/* Add focus styles */
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #00324d;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #087fbf;
+}
+.colorData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+/* Chrome styles */
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding:  0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+/* Firefox styles */
+input[type="color"]::-moz-color-swatch {
+    border: none;
+}
+input[type="color"]::-moz-focus-inner {
+    border: none;
+    padding:  0;
+}
+
+.color-preview{
+    background-color: rgb(53, 139, 224);
+    width:  90px;
+    height:  25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0;
+    display: flex;
+    justify-content: end;
+
+}
+.color-box {
+    width:  20px;
+    height:  20px;
+    display: inline-block;
+    vertical-align: middle;
+    border:  1px solid #ccc;
+}
+
+/* Para navegadores basados en WebKit */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:  0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+span .select2-dropdown  {
+    z-index: 1055;
+}
+
+/* Union de fichas */
+
+    /* Estilos del modal */
+
+.fichaUnion {
+    color: #00324d;
+    font-weight: bold;
+}
+
+.datoUnionFicha {
+    text-transform: capitalize;
+}
+
+.datoUnionTrimestre {
+    text-transform: uppercase;
+}
+
+    /* animaciones */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.disappear {
+    animation: fadeOut 1s ease-out forwards; /* Ajusta la duración según sea necesario */
+}
+
+
+#contenedor1, #contenedor2, #info {
+    cursor: pointer;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+@keyframes fadeOutD {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(150px); }
+}
+@keyframes fadeOutI {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(-150px); }
+}
+@keyframes fadeOutA {
+    0% {
+        transform: translateY(0);
+        height: 0;
+        border: solid 1px transparent; /* Color de borde transparente al inicio */
+        border-radius: 8px;
+    }
+    75% {
+        transform: translateY(120px);
+    }
+    to {
+        transform: translateY(120px);
+        height: 215px;
+        border: solid 1px #00324d; /* Color del borde al final */
+        border-radius: 8px;
+    }
+  }
+@keyframes removeMargin {
+    from { margin-bottom: 1rem; }
+    to { margin-bottom: 3px;}
+}
+
+.moveD {
+    animation: fadeOutD 1s forwards;
+}
+
+.moveI {
+    animation: fadeOutI 1s forwards;
+}
+
+.moveA {
+    animation: fadeOutA .5s forwards;
+}
+
+.moveA p{
+    animation: removeMargin 1s forwards;
+}
+
+#result{
+    width: 100%;
+    height: 180px;
+    padding: 0 5%;
+    margin-top: -90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.result{
+    animation: appear 1s forwards;
+}
+.result .til{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0 0 0;
+}
+.result .til i{
+    font-size: 35px;
+}
+
+.result .infoResultado{
+    display: flex;
+    justify-content: space-around;
+}
+
+.result .infoResultado div{
+    width: 40%;
+    margin-top: -4%;
+}
+.result .infoResultado div p{
+    text-align: start;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+        border: solid 1px transparent; /* Establece un color transparente al inicio */
+        border-radius: 8px;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(65px);
+        border: solid 1px var(--main-text-color); /* Deja el borde totalmente visible al final */
+        border-radius: 8px;
+    }
+}
+
+.cerrarModal{
+    animation: disappear 1s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.reiniciar{
+    animation: change 1s forwards;
+}
+
+@keyframes change {
+    0% {
+        background-color: #00324d;
+    }
+    100% {
+        background-color: var(--main-text-color);
+        color: white;
+    }
+}
+
+
+
+
+

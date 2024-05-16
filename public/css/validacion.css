@@ -1,0 +1,21 @@
+
+
+
+/* VALIDACION 2*/
+
+.input-grupo span {
+    color: red;
+}
+
+#submit-error{
+    color: red;
+}
+
+.input-grupo span i{
+    color: #2e8b57;
+}
+
+.input-grupo span p{
+    color: seagreen;
+}
+

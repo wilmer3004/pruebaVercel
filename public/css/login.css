@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #00324d;
+}
+
+
+body {
+    background-image: linear-gradient(var(--primary-color), #016ba4);
+    /* background-image: url('../img/login.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../img/logosena_verde.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: auto;
+    margin-top: 20px;
+}
+.form-label {
+    font-size: 18px; 
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 10px;
+}
+.bts-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.bt {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bts-group a {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bt:hover {
+    color: #009d63;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.icon-eye {
+    position: absolute;
+    right: 60px;
+    top: 67%;
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+.icon-eye:hover {
+    color: #016ba4;
+}
+
+
+

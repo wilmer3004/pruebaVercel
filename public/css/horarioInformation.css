@@ -1,0 +1,276 @@
+:root {
+    --primary-color: #00324d;
+    --backgroundcolor3:#ffffffea;
+    --color-letter:#000000;
+    --color-letter-title:#ffffff;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-text-opacity:1;
+}
+
+
+.offcanvas-size{
+    width: 50% !important;
+}
+
+.container-data-study-sheet,
+.container-data-teacher {
+    margin-bottom:  20px;
+    padding: 10px;
+}
+
+
+.container-data-study-sheet p,
+.container-data-teacher p {
+    margin:  0;
+}
+
+.btn-warning, .btn-danger {
+    margin-right:  10px;
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-Container-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row-container-title-teacher .title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: capitalize
+
+}
+
+.row-container-title-teacher .title p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--color-letter-title);
+}
+
+.row-container-title-teacher .title img{
+    width: 60px;
+    height: 60px;
+}
+
+.row-container-title .col-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    gap: 8px;
+}
+
+
+.row-container-title .col-12 p{
+    margin-top: 10px;
+    font-size: 22px;
+    color: var(--color-letter-title);
+}
+
+.row-container-title .col-12 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.container-label{
+    display: flex;
+    flex-direction: column;
+}
+.row-container{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.offcanvas-header-edit{
+    background-color: var(--primary-color);
+    box-shadow: 1px 8px 12px #013653ae;
+}
+
+.title-event h1{
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 15px !important;
+    margin-bottom: 30px;
+
+}
+
+.title-event{
+    margin-bottom: 20px;
+}
+
+.btn-collapse{
+    padding: 8px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px #aaaaaa;
+    width: 100%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.btns-group-d{
+    display: flex;
+    gap: 4px;
+    justify-content: start;
+}
+
+.btns-group-d a{
+    height: 20px;
+}
+
+.div-container-hours{
+    display: flex;
+    padding: 10px;
+    background-color: var(--primary-color);
+    gap: 5px;
+    max-width: 500px;
+    border-radius: 1rem 0 1rem 1rem;
+    margin-right: 20px;
+}
+.div-container-hours-select{
+    display: flex;
+    padding: 10px;
+    background-color: var(--primary-color);
+    gap: 5px;
+    max-width: 500px;
+    border-radius: 1rem 1rem 0 0;
+    margin-right: 20px;
+}
+
+.div-container-hours-select select{
+    border-radius: 10px;
+    height: 30px;
+}
+
+
+.container-hours{
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+    flex-direction: column;
+}
+
+.title-hours{
+    text-align: center;
+    color: #39A900 !important;
+    font-size: 10px;
+
+}
+
+.div-information-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 200px;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 1rem;
+
+
+}
+
+.div-information-1 .div-container-A,
+.div-information-1 .div-container-B{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(248, 250, 252);
+    max-height: 95px;
+    margin-right: 5px;
+
+}
+
+.div-information-1 .div-container-A{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.div-information-1 .div-container-B{
+    border-radius: 0 0 1rem 1rem;
+}
+
+.div-information-1 .div-container-A .hours,
+.div-information-1 .div-container-B .hours{
+    font-size: 20px;
+    margin-top: -18px;
+
+}
+.div-information-1 .div-container-A .title-hours,
+.div-information-1 .div-container-B .title-hours{
+    font-size: 11px;
+
+}
+.div-information-1 .div-container-A p,
+.div-information-1 .div-container-B p{
+    color: #00324D;
+
+}
+
+.div-container-information-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    max-width: 150px;
+    background: rgb(248, 250, 252);
+    padding: 10px;
+    max-height: 200px;
+    border-radius: 1rem;
+
+
+}
+.div-container-information-hours .hours{
+    font-size: 80px !important;
+    margin-bottom: -30px;
+}
+.div-container-information-hours p{
+    font-size: 20px;
+    color: #00324D;
+}
+
+.div-container-information-hours .text-hours{
+    margin-top: -20px;
+}
+
+.div-container-information-hours .title-hours{
+    font-size: 13px;
+}
+.text-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-hours p{
+    margin: 0;
+    padding: 0;
+}
+.hours{
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

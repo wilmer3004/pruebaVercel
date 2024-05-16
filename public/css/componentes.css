@@ -1,0 +1,23 @@
+/* Navbar */
+.button{
+    color: #00324d;
+}
+
+.navbutton:hover{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+.table2 {
+    width: 900px;
+}
+
+.nav-button.active{
+    color: aliceblue;
+    background-color: #00324d;
+}
+
+
+span .select2-dropdown  {
+    z-index: 1055;
+}

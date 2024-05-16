@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #00324d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    /* display: grid; */
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos Globales */
+input {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.tittle {
+    text-align: center;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* Barra de Progreso */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 1rem 0 2rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: #00324d !important;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 2.1875rem;
+    height: 2.187rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.7rem);
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.progress-step-active {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    animation: animate 0.5s;
+    transition: animation 0.5s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1. 0);
+        opacity: 1;
+    }
+}
+
+/* formulario */
+.form {
+    width: clamp(700px, 30%, 430px);
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.input-group {
+    margin: 1rem 0;
+    display: block !important;
+}
+
+.input-group p {
+    text-decoration: none;
+    color: #00324d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.input-group-active  {
+    color: #009d63 !important;
+    /* box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color); */
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-group p:hover {
+    /* background-color: rgb(224, 219, 219); */
+    color: #009d63;
+    /* box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+    border-radius: 2px; */
+    font-size: 16px;
+}
+
+.column-list {
+    list-style: none;
+}
+
+.titleLabel {
+    font-weight: bold;
+}
+
+.container {
+    margin-bottom: 3%;
+}
+
+.selectStepTwo{
+    width: 100%;
+}
+
+.fichasSelection {
+    margin: 10px;
+    overflow: scroll;
+    max-height: 20rem;
+    text-align: center;
+}
+
+.subTitle{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.textDown {
+    color: #666;
+}
+
+
+/* Botón */
+
+.bts-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.bt {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bt:hover {
+    color: #009d63;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.bt-icon {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.40rem;
+    transition: 0.3s;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #f3f3f3;
+    display: flex;
+}
+
+
+.bt-icon:hover {
+    color: #009d63;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.fecha{
+    width: 80%;
+    height: 30px;
+}
+
+.hora{
+    height: 30px;
+}
+
+h4{
+    text-align: center;
+}
+
+.trimestre{
+    width: 100px;
+}
+
+.bloqueSelect {
+    width: 100px;
+}
+
+.cont-tri{
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.select3{
+   margin-right: 15px;
+}
+
+/* Estilos del de la caja de herramienta */
+.buttonConfigEvent {
+    max-width: 30px;
+}
+/* Titulo caja de herramientas */
+.title_color {
+    color: #00324d;
+
+}
+
+.title_color_tool_box {
+    font-weight: bold;
+}
+
+.check_box_programacion_continua {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.bt_clear_data_tool_box {
+    width: 30%;
+}
+
+.message_error_tool_box {
+    color: red;
+    cursor: none;
+}
