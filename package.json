@@ -3,7 +3,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "postinstall": "cp node_modules/datatables.net-dt/css/jquery.dataTables.css public/css/ && cp node_modules/datatables.net-dt/js/jquery.dataTables.min.js public/js/"
+        "postinstall": "node_modules/.bin/cp node_modules/datatables.net-dt/css/jquery.dataTables.css public/css/ || true && node_modules/.bin/cp node_modules/datatables.net-dt/js/jquery.dataTables.min.js public/js/ || true"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
